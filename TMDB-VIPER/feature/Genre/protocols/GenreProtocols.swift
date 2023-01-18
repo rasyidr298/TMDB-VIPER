@@ -6,3 +6,33 @@
 //
 
 import Foundation
+import UIKit
+
+protocol GenrePresenterToInteractorProtocol {
+  var presenter: GenreInteractorToPresenterProtocol? {get set}
+  func fetchGenres()
+}
+
+protocol GenreInteractorToPresenterProtocol {
+  func genreFetchedSucces(genres: [Genre])
+  func genreFetchedFailed(error: String)
+}
+
+protocol GenreViewToPresenterProtocol {
+  var genreView: GenrePresenterToViewProtocol? {get set}
+  var interactor: GenrePresenterToInteractorProtocol? {get set}
+  var router: GenrePresenterToRouterProtocol? {get set}
+  
+  func startFetchGenre()
+  func showMovieVC(controller: UINavigationController)
+}
+
+protocol GenrePresenterToViewProtocol {
+  func showGenre(genres: [Genre])
+  func showError(error: String)
+}
+
+protocol GenrePresenterToRouterProtocol {
+  static func createModule() -> GenreVC
+  func pushToMovie(controller: UINavigationController)
+}
