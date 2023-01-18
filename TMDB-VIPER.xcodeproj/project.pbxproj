@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010AE4A32977CA810018F7E8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4A22977CA810018F7E8 /* UIColor.swift */; };
 		01766FA12976952D00FED90A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA02976952D00FED90A /* AppDelegate.swift */; };
 		01766FA32976952D00FED90A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA22976952D00FED90A /* SceneDelegate.swift */; };
 		01766FAA2976952E00FED90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01766FA92976952E00FED90A /* Assets.xcassets */; };
 		01766FAD2976952E00FED90A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01766FAB2976952E00FED90A /* LaunchScreen.storyboard */; };
+		01DD74272977A83D0022419B /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DD74262977A83D0022419B /* UICollectionViewCell.swift */; };
 		01E619FD2977038A00792EB0 /* GenreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E619FB2977038A00792EB0 /* GenreVC.swift */; };
 		01E619FE2977038A00792EB0 /* GenreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E619FC2977038A00792EB0 /* GenreVC.xib */; };
 		01E61A03297704C600792EB0 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A02297704C600792EB0 /* ApiCall.swift */; };
@@ -37,16 +39,21 @@
 		01E61A3F2977071100792EB0 /* GenreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A3E2977071100792EB0 /* GenreProtocols.swift */; };
 		01E61A412977071800792EB0 /* GenrePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A402977071800792EB0 /* GenrePresenter.swift */; };
 		01E61A432977072900792EB0 /* GenreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A422977072900792EB0 /* GenreInteractor.swift */; };
-		C0DB211557DFFBA2B23719EE /* Pods_TMDB_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB34BDD9DD9EC2A47AB894A /* Pods_TMDB_VIPER.framework */; };
+		01E61A4D297791BD00792EB0 /* ItemGenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */; };
+		01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */; };
+		01E61A5029779B2F00792EB0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4F29779B2F00792EB0 /* UIView.swift */; };
+		2529E27D7839D6B1DDB0E1F0 /* Pods_TMDB_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		010AE4A22977CA810018F7E8 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		01766F9D2976952D00FED90A /* TMDB-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01766FA02976952D00FED90A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01766FA22976952D00FED90A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01766FA92976952E00FED90A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01766FAC2976952E00FED90A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		01766FAE2976952E00FED90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01766FAE2976952E00FED90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		01DD74262977A83D0022419B /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		01E619FB2977038A00792EB0 /* GenreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreVC.swift; sourceTree = "<group>"; };
 		01E619FC2977038A00792EB0 /* GenreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreVC.xib; sourceTree = "<group>"; };
 		01E61A02297704C600792EB0 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
@@ -73,9 +80,12 @@
 		01E61A3E2977071100792EB0 /* GenreProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreProtocols.swift; sourceTree = "<group>"; };
 		01E61A402977071800792EB0 /* GenrePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePresenter.swift; sourceTree = "<group>"; };
 		01E61A422977072900792EB0 /* GenreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreInteractor.swift; sourceTree = "<group>"; };
-		5EB34BDD9DD9EC2A47AB894A /* Pods_TMDB_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8C213F4539F0367530872C6A /* Pods-TMDB-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
-		A2B0683D29ADC12BD5CC840A /* Pods-TMDB-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.release.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGenreCell.swift; sourceTree = "<group>"; };
+		01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemGenreCell.xib; sourceTree = "<group>"; };
+		01E61A4F29779B2F00792EB0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
+		A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.release.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.release.xcconfig"; sourceTree = "<group>"; };
+		C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DB211557DFFBA2B23719EE /* Pods_TMDB_VIPER.framework in Frameworks */,
+				2529E27D7839D6B1DDB0E1F0 /* Pods_TMDB_VIPER.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +106,7 @@
 				01766F9F2976952D00FED90A /* TMDB-VIPER */,
 				01766F9E2976952D00FED90A /* Products */,
 				E0882E40FAB3872B5182C069 /* Pods */,
-				75466C661318C477162495B5 /* Frameworks */,
+				D59622E1FA9667BDBE56AAD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +121,7 @@
 		01766F9F2976952D00FED90A /* TMDB-VIPER */ = {
 			isa = PBXGroup;
 			children = (
+				01766FAE2976952E00FED90A /* Info.plist */,
 				01E619FA2977030700792EB0 /* main */,
 				01E619F92977030000792EB0 /* feature */,
 				01E619F8297702FA00792EB0 /* utils */,
@@ -124,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				01766FA92976952E00FED90A /* Assets.xcassets */,
-				01766FAE2976952E00FED90A /* Info.plist */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -135,6 +145,9 @@
 				01E61A04297704CA00792EB0 /* String.swift */,
 				01E61A06297704D600792EB0 /* UIImage.swift */,
 				01E61A08297704E200792EB0 /* UITableViewCell.swift */,
+				01E61A4F29779B2F00792EB0 /* UIView.swift */,
+				01DD74262977A83D0022419B /* UICollectionViewCell.swift */,
+				010AE4A22977CA810018F7E8 /* UIColor.swift */,
 			);
 			path = extenstion;
 			sourceTree = "<group>";
@@ -348,16 +361,26 @@
 		01E61A39297706F600792EB0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				01E61A482977918D00792EB0 /* cell */,
 				01E619FB2977038A00792EB0 /* GenreVC.swift */,
 				01E619FC2977038A00792EB0 /* GenreVC.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
 		};
-		75466C661318C477162495B5 /* Frameworks */ = {
+		01E61A482977918D00792EB0 /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				5EB34BDD9DD9EC2A47AB894A /* Pods_TMDB_VIPER.framework */,
+				01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */,
+				01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		D59622E1FA9667BDBE56AAD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -365,8 +388,8 @@
 		E0882E40FAB3872B5182C069 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8C213F4539F0367530872C6A /* Pods-TMDB-VIPER.debug.xcconfig */,
-				A2B0683D29ADC12BD5CC840A /* Pods-TMDB-VIPER.release.xcconfig */,
+				96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */,
+				A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -378,11 +401,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01766FB12976952E00FED90A /* Build configuration list for PBXNativeTarget "TMDB-VIPER" */;
 			buildPhases = (
-				EA8FE6AA25815DFEAEC2A58A /* [CP] Check Pods Manifest.lock */,
+				DD5D4E978F052A880CCF8F9C /* [CP] Check Pods Manifest.lock */,
 				01766F992976952D00FED90A /* Sources */,
 				01766F9A2976952D00FED90A /* Frameworks */,
 				01766F9B2976952D00FED90A /* Resources */,
-				06B705DD85520A9B709AD0D1 /* [CP] Embed Pods Frameworks */,
+				43BC96584AB21813D2381903 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -433,6 +456,7 @@
 			files = (
 				01766FAD2976952E00FED90A /* LaunchScreen.storyboard in Resources */,
 				01E61A1F2977065F00792EB0 /* DetailVC.xib in Resources */,
+				01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */,
 				01766FAA2976952E00FED90A /* Assets.xcassets in Resources */,
 				01E61A33297706CD00792EB0 /* MovieVC.xib in Resources */,
 				01E619FE2977038A00792EB0 /* GenreVC.xib in Resources */,
@@ -442,7 +466,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06B705DD85520A9B709AD0D1 /* [CP] Embed Pods Frameworks */ = {
+		43BC96584AB21813D2381903 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -459,7 +483,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EA8FE6AA25815DFEAEC2A58A /* [CP] Check Pods Manifest.lock */ = {
+		DD5D4E978F052A880CCF8F9C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -492,8 +516,11 @@
 				01E619FD2977038A00792EB0 /* GenreVC.swift in Sources */,
 				01766FA12976952D00FED90A /* AppDelegate.swift in Sources */,
 				01E61A122977061B00792EB0 /* DetailPresenter.swift in Sources */,
+				010AE4A32977CA810018F7E8 /* UIColor.swift in Sources */,
 				01E61A432977072900792EB0 /* GenreInteractor.swift in Sources */,
 				01E61A3D2977070C00792EB0 /* Genre.swift in Sources */,
+				01E61A4D297791BD00792EB0 /* ItemGenreCell.swift in Sources */,
+				01E61A5029779B2F00792EB0 /* UIView.swift in Sources */,
 				01E61A1A2977063800792EB0 /* DetailRouter.swift in Sources */,
 				01E61A2F297706BD00792EB0 /* MovieInteractor.swift in Sources */,
 				01E61A3F2977071100792EB0 /* GenreProtocols.swift in Sources */,
@@ -508,6 +535,7 @@
 				01E61A03297704C600792EB0 /* ApiCall.swift in Sources */,
 				01E61A162977062C00792EB0 /* Video.swift in Sources */,
 				01766FA32976952D00FED90A /* SceneDelegate.swift in Sources */,
+				01DD74272977A83D0022419B /* UICollectionViewCell.swift in Sources */,
 				01E61A3B2977070700792EB0 /* GenreRouter.swift in Sources */,
 				01E61A142977062200792EB0 /* DetailProtocols.swift in Sources */,
 				01E61A2B297706B100792EB0 /* MovieProtocols.swift in Sources */,
@@ -646,19 +674,20 @@
 		};
 		01766FB22976952E00FED90A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C213F4539F0367530872C6A /* Pods-TMDB-VIPER.debug.xcconfig */;
+			baseConfigurationReference = 96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMDB-VIPER/resources/Info.plist";
+				INFOPLIST_FILE = "TMDB-VIPER/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -678,19 +707,20 @@
 		};
 		01766FB32976952E00FED90A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2B0683D29ADC12BD5CC840A /* Pods-TMDB-VIPER.release.xcconfig */;
+			baseConfigurationReference = A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMDB-VIPER/resources/Info.plist";
+				INFOPLIST_FILE = "TMDB-VIPER/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
