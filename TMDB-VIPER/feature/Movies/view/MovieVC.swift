@@ -55,6 +55,13 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
     return movies.count
   }
   
+  func tableView(
+    _ tableView: UITableView,
+    didSelectRowAt indexPath: IndexPath
+  ) {
+    presenter?.showDetailVC(controller: navigationController!, movie: movies[indexPath.row])
+  }  
+  
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: ItemMovieCell.REUSE_IDENTIFIER, for: indexPath) as! ItemMovieCell
     cell.setupView(movie: movies[indexPath.row])

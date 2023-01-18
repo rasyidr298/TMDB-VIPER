@@ -10,6 +10,8 @@
 		010AE4A32977CA810018F7E8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4A22977CA810018F7E8 /* UIColor.swift */; };
 		010AE4AB2977D68D0018F7E8 /* ItemMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4A92977D68D0018F7E8 /* ItemMovieCell.swift */; };
 		010AE4AC2977D68D0018F7E8 /* ItemMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */; };
+		010AE4B6297816AE0018F7E8 /* ItemReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4B4297816AE0018F7E8 /* ItemReviewCell.swift */; };
+		010AE4B7297816AE0018F7E8 /* ItemReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010AE4B5297816AE0018F7E8 /* ItemReviewCell.xib */; };
 		01766FA12976952D00FED90A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA02976952D00FED90A /* AppDelegate.swift */; };
 		01766FA32976952D00FED90A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA22976952D00FED90A /* SceneDelegate.swift */; };
 		01766FAA2976952E00FED90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01766FA92976952E00FED90A /* Assets.xcassets */; };
@@ -51,6 +53,8 @@
 		010AE4A22977CA810018F7E8 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		010AE4A92977D68D0018F7E8 /* ItemMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMovieCell.swift; sourceTree = "<group>"; };
 		010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemMovieCell.xib; sourceTree = "<group>"; };
+		010AE4B4297816AE0018F7E8 /* ItemReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemReviewCell.swift; sourceTree = "<group>"; };
+		010AE4B5297816AE0018F7E8 /* ItemReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemReviewCell.xib; sourceTree = "<group>"; };
 		01766F9D2976952D00FED90A /* TMDB-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01766FA02976952D00FED90A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01766FA22976952D00FED90A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +115,15 @@
 				010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */,
 			);
 			path = cell;
+			sourceTree = "<group>";
+		};
+		010AE4AD297814F10018F7E8 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				010AE4B4297816AE0018F7E8 /* ItemReviewCell.swift */,
+				010AE4B5297816AE0018F7E8 /* ItemReviewCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		01766F942976952D00FED90A = {
@@ -276,6 +289,7 @@
 		01E61A1B2977064300792EB0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				010AE4AD297814F10018F7E8 /* cell */,
 				01E61A1C2977065F00792EB0 /* DetailVC.swift */,
 				01E61A1D2977065F00792EB0 /* DetailVC.xib */,
 			);
@@ -472,6 +486,7 @@
 				010AE4AC2977D68D0018F7E8 /* ItemMovieCell.xib in Resources */,
 				01E61A1F2977065F00792EB0 /* DetailVC.xib in Resources */,
 				01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */,
+				010AE4B7297816AE0018F7E8 /* ItemReviewCell.xib in Resources */,
 				01766FAA2976952E00FED90A /* Assets.xcassets in Resources */,
 				01E61A33297706CD00792EB0 /* MovieVC.xib in Resources */,
 				01E619FE2977038A00792EB0 /* GenreVC.xib in Resources */,
@@ -531,6 +546,7 @@
 				01E619FD2977038A00792EB0 /* GenreVC.swift in Sources */,
 				01766FA12976952D00FED90A /* AppDelegate.swift in Sources */,
 				01E61A122977061B00792EB0 /* DetailPresenter.swift in Sources */,
+				010AE4B6297816AE0018F7E8 /* ItemReviewCell.swift in Sources */,
 				010AE4A32977CA810018F7E8 /* UIColor.swift in Sources */,
 				01E61A432977072900792EB0 /* GenreInteractor.swift in Sources */,
 				01E61A3D2977070C00792EB0 /* Genre.swift in Sources */,

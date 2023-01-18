@@ -17,8 +17,8 @@ class MoviePresenter: MovieViewToPresenterProtocol {
     interactor?.fetchMovies(idGenre: idGenre, page: page)
   }
   
-  func showDetailVC(controller: UINavigationController) {
-    router?.pushToDetail(controller: controller)
+  func showDetailVC(controller: UINavigationController, movie: Movie) {
+    router?.pushToDetail(controller: controller, movie: movie)
   }
 }
 

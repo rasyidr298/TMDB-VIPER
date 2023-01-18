@@ -40,7 +40,7 @@ public struct Movie: Decodable, Hashable {
   }
   
   public var voteAveragePercentText: String? {
-    return "\(Int((voteAverage ?? 0.0) * 10))%"
+    return String(format: " %.2f ", voteAverage ?? 0.0)
   }
   
   internal enum CodingKeys: String, CodingKey {
