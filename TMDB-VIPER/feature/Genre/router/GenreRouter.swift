@@ -25,8 +25,9 @@ class GenreRouter: GenrePresenterToRouterProtocol {
     return view
   }
   
-  func pushToMovie(controller: UINavigationController) {
-    //to movie
+  func pushToMovie(controller: UINavigationController, genre: Genre) {
+    let vc = MovieRouter.createModule()
+    vc.genre = genre
+    controller.pushViewController(vc, animated: true)
   }
-  
 }

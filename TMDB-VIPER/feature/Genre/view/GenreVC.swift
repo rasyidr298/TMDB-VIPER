@@ -45,7 +45,7 @@ extension GenreVC: GenrePresenterToViewProtocol {
     actIndikator.hidesWhenStopped = true
   }
   
-  func showError(error: String) {
+  func showError(error: Error) {
     print("show error -> \(error)")
     actIndikator.stopAnimating()
     actIndikator.hidesWhenStopped = true
@@ -74,7 +74,7 @@ extension GenreVC: UICollectionViewDataSource {
     _ collectionView: UICollectionView,
     didSelectItemAt indexPath: IndexPath
   ) {
-    //to movie
+    presenter?.showMovieVC(controller: navigationController!, genre: genres[indexPath.row])
   }
 }
 

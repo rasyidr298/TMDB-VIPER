@@ -11,7 +11,17 @@ import Kingfisher
 public extension UIImageView {
   func setImageUrl(urlPath: String){
     if let url = URL(string: urlPath) {
-      self.kf.setImage(with: url)
+      let processor = DownsamplingImageProcessor(size: self.bounds.size) |> RoundCornerImageProcessor(cornerRadius: 8)
+      self.kf.indicatorType = .activity
+      self.kf.setImage(
+        with: url,
+        options: [
+          .processor(processor),
+          .scaleFactor(UIScreen.main.scale),
+          .transition(.fade(1)),
+          .cacheOriginalImage
+        ]
+      )
     }
   }
 }

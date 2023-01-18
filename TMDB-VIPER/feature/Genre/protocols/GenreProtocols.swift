@@ -15,7 +15,7 @@ protocol GenrePresenterToInteractorProtocol {
 
 protocol GenreInteractorToPresenterProtocol {
   func genreFetchedSucces(genres: [Genre])
-  func genreFetchedFailed(error: String)
+  func genreFetchedFailed(error: Error)
 }
 
 protocol GenreViewToPresenterProtocol {
@@ -24,15 +24,15 @@ protocol GenreViewToPresenterProtocol {
   var router: GenrePresenterToRouterProtocol? {get set}
   
   func startFetchGenre()
-  func showMovieVC(controller: UINavigationController)
+  func showMovieVC(controller: UINavigationController, genre: Genre)
 }
 
 protocol GenrePresenterToViewProtocol {
   func showGenre(genres: [Genre])
-  func showError(error: String)
+  func showError(error: Error)
 }
 
 protocol GenrePresenterToRouterProtocol {
   static func createModule() -> GenreVC
-  func pushToMovie(controller: UINavigationController)
+  func pushToMovie(controller: UINavigationController, genre: Genre)
 }
