@@ -11,8 +11,8 @@ struct ApiCall {
   static public let URL_BASE = "https://api.themoviedb.org/3/"
   static public let API_KEY = "967ad60bd20b9b2102526183323e3c3b"
   
-  static public let imagePosterUrl = "https://image.tmdb.org/t/p/w500/"
-  static public let imagebackdropUrl = "https://image.tmdb.org/t/p/original/"
+  static public let imagePosterUrl = "https://image.tmdb.org/t/p/w500"
+  static public let imagebackdropUrl = "https://image.tmdb.org/t/p/original"
   
   static public let youtubeUrl = "https://www.youtube.com/watch?v=/"
   static public let imageTumbnailYt = "http://img.youtube.com/vi/"

@@ -17,8 +17,8 @@ class GenrePresenter: GenreViewToPresenterProtocol {
     interactor?.fetchGenres()
   }
   
-  func showMovieVC(controller: UINavigationController) {
-    router?.pushToMovie(controller: controller)
+  func showMovieVC(controller: UINavigationController, genre: Genre) {
+    router?.pushToMovie(controller: controller, genre: genre)
   }
 }
 
@@ -29,7 +29,7 @@ extension GenrePresenter: GenreInteractorToPresenterProtocol {
     genreView?.showGenre(genres: genres)
   }
   
-  func genreFetchedFailed(error: String) {
+  func genreFetchedFailed(error: Error) {
     genreView?.showError(error: error)
   }
 }

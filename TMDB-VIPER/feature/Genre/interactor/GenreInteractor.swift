@@ -19,8 +19,8 @@ class GenreInteractor: GenrePresenterToInteractorProtocol {
           switch response.result {
           case .success(let value):
             self.presenter?.genreFetchedSucces(genres: value.genre)
-          case .failure:
-            self.presenter?.genreFetchedFailed(error: "The server responded with empty objects")
+          case .failure(let error):
+            self.presenter?.genreFetchedFailed(error: error)
           }
         }
     }

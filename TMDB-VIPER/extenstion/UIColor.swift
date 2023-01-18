@@ -10,6 +10,6 @@ import UIKit
 
 extension UIColor {
   static var random: UIColor {
-    return .init(hue: .random(in: 0...1), saturation: 1, brightness: 1, alpha: 1)
+    return .init(hue: .random(in: 0...1), saturation: 10, brightness: 10, alpha: 10)
   }
 }

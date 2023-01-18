@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		010AE4A32977CA810018F7E8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4A22977CA810018F7E8 /* UIColor.swift */; };
+		010AE4AB2977D68D0018F7E8 /* ItemMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4A92977D68D0018F7E8 /* ItemMovieCell.swift */; };
+		010AE4AC2977D68D0018F7E8 /* ItemMovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */; };
 		01766FA12976952D00FED90A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA02976952D00FED90A /* AppDelegate.swift */; };
 		01766FA32976952D00FED90A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA22976952D00FED90A /* SceneDelegate.swift */; };
 		01766FAA2976952E00FED90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01766FA92976952E00FED90A /* Assets.xcassets */; };
@@ -47,12 +49,14 @@
 
 /* Begin PBXFileReference section */
 		010AE4A22977CA810018F7E8 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		010AE4A92977D68D0018F7E8 /* ItemMovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemMovieCell.swift; sourceTree = "<group>"; };
+		010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemMovieCell.xib; sourceTree = "<group>"; };
 		01766F9D2976952D00FED90A /* TMDB-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01766FA02976952D00FED90A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01766FA22976952D00FED90A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		01766FA92976952E00FED90A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01766FAC2976952E00FED90A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		01766FAE2976952E00FED90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = resources/Info.plist; sourceTree = "<group>"; };
+		01766FAE2976952E00FED90A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		01DD74262977A83D0022419B /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		01E619FB2977038A00792EB0 /* GenreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreVC.swift; sourceTree = "<group>"; };
 		01E619FC2977038A00792EB0 /* GenreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreVC.xib; sourceTree = "<group>"; };
@@ -100,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010AE4A82977D67B0018F7E8 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				010AE4A92977D68D0018F7E8 /* ItemMovieCell.swift */,
+				010AE4AA2977D68D0018F7E8 /* ItemMovieCell.xib */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
 		01766F942976952D00FED90A = {
 			isa = PBXGroup;
 			children = (
@@ -121,7 +134,6 @@
 		01766F9F2976952D00FED90A /* TMDB-VIPER */ = {
 			isa = PBXGroup;
 			children = (
-				01766FAE2976952E00FED90A /* Info.plist */,
 				01E619FA2977030700792EB0 /* main */,
 				01E619F92977030000792EB0 /* feature */,
 				01E619F8297702FA00792EB0 /* utils */,
@@ -134,6 +146,7 @@
 		01E619F6297702E500792EB0 /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				01766FAE2976952E00FED90A /* Info.plist */,
 				01766FA92976952E00FED90A /* Assets.xcassets */,
 			);
 			path = resources;
@@ -312,6 +325,7 @@
 		01E61A252977068D00792EB0 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				010AE4A82977D67B0018F7E8 /* cell */,
 				01E61A30297706CD00792EB0 /* MovieVC.swift */,
 				01E61A31297706CD00792EB0 /* MovieVC.xib */,
 			);
@@ -455,6 +469,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				01766FAD2976952E00FED90A /* LaunchScreen.storyboard in Resources */,
+				010AE4AC2977D68D0018F7E8 /* ItemMovieCell.xib in Resources */,
 				01E61A1F2977065F00792EB0 /* DetailVC.xib in Resources */,
 				01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */,
 				01766FAA2976952E00FED90A /* Assets.xcassets in Resources */,
@@ -541,6 +556,7 @@
 				01E61A2B297706B100792EB0 /* MovieProtocols.swift in Sources */,
 				01E61A102977061400792EB0 /* DetailInteractor.swift in Sources */,
 				01E61A1E2977065F00792EB0 /* DetailVC.swift in Sources */,
+				010AE4AB2977D68D0018F7E8 /* ItemMovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,7 +699,7 @@
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMDB-VIPER/Info.plist";
+				INFOPLIST_FILE = "TMDB-VIPER/resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -716,7 +732,7 @@
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = DA8L68M7F2;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "TMDB-VIPER/Info.plist";
+				INFOPLIST_FILE = "TMDB-VIPER/resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
