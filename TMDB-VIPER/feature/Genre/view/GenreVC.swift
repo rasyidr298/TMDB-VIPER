@@ -25,7 +25,7 @@ class GenreVC: UIViewController {
     navigationController?.navigationBar.prefersLargeTitles = true
     
     presenter?.startFetchGenre()
-    actIndikator.startAnimating()
+    actIndikator.start()
     
     self.collectionViewGenre.delegate = self
     self.collectionViewGenre.dataSource = self
@@ -41,14 +41,12 @@ extension GenreVC: GenrePresenterToViewProtocol {
   func showGenre(genres: [Genre]) {
     self.genres.append(contentsOf: genres)
     self.collectionViewGenre.reloadData()
-    actIndikator.stopAnimating()
-    actIndikator.hidesWhenStopped = true
+    actIndikator.stop()
   }
   
   func showError(error: Error) {
     print("show error -> \(error)")
-    actIndikator.stopAnimating()
-    actIndikator.hidesWhenStopped = true
+    actIndikator.stop()
   }
 }
 
@@ -74,7 +72,10 @@ extension GenreVC: UICollectionViewDataSource {
     _ collectionView: UICollectionView,
     didSelectItemAt indexPath: IndexPath
   ) {
-    presenter?.showMovieVC(controller: navigationController!, genre: genres[indexPath.row])
+    guard let navigationController = navigationController else {
+      return
+    }
+    presenter?.showMovieVC(controller: navigationController, genre: genres[indexPath.row])
   }
 }
 

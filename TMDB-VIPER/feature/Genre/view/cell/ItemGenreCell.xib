@@ -19,20 +19,16 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13U-0P-rnU">
                         <rect key="frame" x="0.0" y="0.0" width="251" height="143"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="143" id="fdo-Lc-TWA"/>
-                            <constraint firstAttribute="width" constant="251" id="xih-UX-KNd"/>
-                        </constraints>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="13U-0P-rnU" secondAttribute="trailing" id="0KF-bN-WAb"/>
-                    <constraint firstItem="13U-0P-rnU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="5EH-wt-de2"/>
-                    <constraint firstAttribute="bottom" secondItem="13U-0P-rnU" secondAttribute="bottom" id="Mnh-dt-sFI"/>
-                    <constraint firstItem="13U-0P-rnU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Zsl-X7-U1F"/>
+                    <constraint firstItem="13U-0P-rnU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="3yp-2O-76A"/>
+                    <constraint firstAttribute="trailing" secondItem="13U-0P-rnU" secondAttribute="trailing" id="PY3-LH-fAX"/>
+                    <constraint firstAttribute="bottom" secondItem="13U-0P-rnU" secondAttribute="bottom" id="iXv-w0-oUi"/>
+                    <constraint firstItem="13U-0P-rnU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yFQ-yc-sRL"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>
                     <userDefinedRuntimeAttribute type="number" keyPath="radiusView">

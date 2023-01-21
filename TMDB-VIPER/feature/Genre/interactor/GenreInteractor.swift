@@ -18,7 +18,7 @@ class GenreInteractor: GenrePresenterToInteractorProtocol {
         .responseDecodable(of: genreResponse.self) {response in
           switch response.result {
           case .success(let value):
-            self.presenter?.genreFetchedSucces(genres: value.genre)
+            self.presenter?.genreFetchedSucces(genres: value.genre ?? [Genre.default])
           case .failure(let error):
             self.presenter?.genreFetchedFailed(error: error)
           }

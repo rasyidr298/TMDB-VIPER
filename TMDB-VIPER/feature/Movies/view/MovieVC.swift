@@ -27,7 +27,7 @@ class MovieVC: UIViewController {
     navigationController?.navigationBar.prefersLargeTitles = true
     
     presenter?.startFetchMovie(idGenre: genre?.id ?? 0, page: curentPage)
-    actIndicator.startAnimating()
+    actIndicator.start()
     
     self.tblViewMovies.delegate = self
     self.tblViewMovies.dataSource = self
@@ -39,14 +39,12 @@ extension MovieVC: MoviePresenterToViewProtocol {
   func showMovie(movies: [Movie]) {
     self.movies.append(contentsOf: movies)
     self.tblViewMovies.reloadData()
-    actIndicator.stopAnimating()
-    actIndicator.hidesWhenStopped = true
+    actIndicator.stop()
   }
   
   func showError(error: Error) {
     print("error -> \(error)")
-    actIndicator.stopAnimating()
-    actIndicator.hidesWhenStopped = true
+    actIndicator.stop()
   }
 }
 
@@ -59,8 +57,15 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
     _ tableView: UITableView,
     didSelectRowAt indexPath: IndexPath
   ) {
-    presenter?.showDetailVC(controller: navigationController!, movie: movies[indexPath.row])
-  }  
+    guard let navigationController = navigationController else {
+      return
+    }
+    presenter?.showDetailVC(controller: navigationController, movie: movies[indexPath.row])
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    ItemMovieCell.CELL_HEIGHT
+  }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: ItemMovieCell.REUSE_IDENTIFIER, for: indexPath) as! ItemMovieCell

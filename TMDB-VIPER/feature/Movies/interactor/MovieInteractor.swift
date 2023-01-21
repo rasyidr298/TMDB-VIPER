@@ -18,7 +18,7 @@ class MovieInteractor: MoviePresenterToInteractorProtocol {
         .responseDecodable(of: MovieResponse.self) {response in
           switch response.result {
           case .success(let value):
-            self.presenter?.movieFetchedSucces(movies: value.movie)
+            self.presenter?.movieFetchedSucces(movies: value.movie ?? [Movie.default])
           case .failure(let error):
             self.presenter?.movieFetchedFailed(error: error)
           }

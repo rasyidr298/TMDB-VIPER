@@ -12,8 +12,11 @@ class DetailVC: UIViewController {
   var presenter: DetailViewToPresenterProtocol?
   var movie: Movie?
   private var reviews = [MovieReview]()
+  private var movieVideo: MovieVideo?
   private var curentPage = 1
   
+  @IBOutlet weak var viewTblReview: UIView!
+  @IBOutlet weak var btnTrailler: UIButton!
   @IBOutlet weak var actIndicator: UIActivityIndicatorView!
   @IBOutlet weak var tblViewReview: UITableView!
   @IBOutlet weak var lblOverview: UILabel!
@@ -27,6 +30,10 @@ class DetailVC: UIViewController {
     configureView()
   }
   
+  @IBAction func didTapTrailler(_ sender: Any) {
+    UIApplication.shared.open((movieVideo?.youtubeURL)!)
+  }
+  
   private func configureView() {
     self.lblOverview.text = movie?.overview
     self.lblVote.text = movie?.voteAveragePercentText
@@ -35,8 +42,10 @@ class DetailVC: UIViewController {
     self.imgPoster.setImageUrl(urlPath: movie?.posterURL ?? "")
     
     presenter?.startFetchReviews(idMovie: movie?.id ?? 0, page: 1)
-    actIndicator.startAnimating()
+    presenter?.startFetchVideo(idMovie: movie?.id ?? 0)
+    actIndicator.start()
     
+    self.tblViewReview.rowHeight = UITableView.automaticDimension
     self.tblViewReview.delegate = self
     self.tblViewReview.dataSource = self
     self.tblViewReview.register(UINib(nibName: ItemReviewCell.REUSE_IDENTIFIER, bundle: nil), forCellReuseIdentifier: ItemReviewCell.REUSE_IDENTIFIER)
@@ -47,14 +56,28 @@ extension DetailVC: DetailPresenterToViewProtocol {
   func showReviews(reviews: [MovieReview]) {
     self.reviews.append(contentsOf: reviews)
     self.tblViewReview.reloadData()
-    actIndicator.stopAnimating()
-    actIndicator.hidesWhenStopped = true
+    actIndicator.stop()
+    
+    if reviews.isEmpty {
+      viewTblReview.isHidden = false
+      self.showLottie(name: "empty", view: viewTblReview, loop: .loop, speed: 0.5)
+    }else {
+      viewTblReview.isHidden = true
+    }
+  }
+  
+  func showVideo(videos: [MovieVideo]) {
+    actIndicator.stop()
+    let _ = videos.map({ video in
+      if video.type == "Trailer" {
+        self.movieVideo = video
+      }
+    })
   }
   
   func showError(error: Error) {
     print("error -> \(error)")
-    actIndicator.stopAnimating()
-    actIndicator.hidesWhenStopped = true
+    actIndicator.stop()
   }
 }
 

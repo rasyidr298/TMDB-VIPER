@@ -14,6 +14,8 @@ class ItemMovieCell: UITableViewCell {
   @IBOutlet weak var lblTitle: UILabel!
   @IBOutlet weak var imgPoster: UIImageView!
   
+  static let CELL_HEIGHT: CGFloat = 220
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code

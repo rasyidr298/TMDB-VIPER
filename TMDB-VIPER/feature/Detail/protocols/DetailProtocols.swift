@@ -11,10 +11,12 @@ import UIKit
 protocol DetailPresenterToInteractorProtocol {
   var presenter: DetailInteractorToPresenterProtocol? {get set}
   func fetchReviews(idMovie: Int, page: Int)
+  func fetchVideo(idMovie: Int)
 }
 
 protocol DetailInteractorToPresenterProtocol {
   func reviewFetchedSucces(reviews: [MovieReview])
+  func videoFetchedSucces(videos: [MovieVideo])
   func reviewFetchedFailed(error: Error)
 }
 
@@ -24,10 +26,12 @@ protocol DetailViewToPresenterProtocol {
   var router: DetailPresenterToRouterProtocol? {get set}
   
   func startFetchReviews(idMovie: Int, page: Int)
+  func startFetchVideo(idMovie: Int)
 }
 
 protocol DetailPresenterToViewProtocol {
   func showReviews(reviews: [MovieReview])
+  func showVideo(videos: [MovieVideo])
   func showError(error: Error)
 }
 

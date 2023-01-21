@@ -18,12 +18,6 @@ class ItemReviewCell: UITableViewCell {
     // Initialization code
   }
   
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    
-    contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
-  }
-  
   func setupView(review: MovieReview) {
     lblAuthor.text = review.author
     lblContent.text = review.content
