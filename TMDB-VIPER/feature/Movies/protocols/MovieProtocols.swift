@@ -24,7 +24,7 @@ protocol MovieViewToPresenterProtocol {
   var router: MoviePresenterToRouterProtocol? {get set}
   
   func startFetchMovie(idGenre: Int, page: Int)
-  func showDetailVC(controller: UINavigationController)
+  func showDetailVC(controller: UINavigationController, movie: Movie)
 }
 
 protocol MoviePresenterToViewProtocol {
@@ -34,5 +34,5 @@ protocol MoviePresenterToViewProtocol {
 
 protocol MoviePresenterToRouterProtocol {
   static func createModule() -> MovieVC
-  func pushToDetail(controller: UINavigationController)
+  func pushToDetail(controller: UINavigationController, movie: Movie)
 }

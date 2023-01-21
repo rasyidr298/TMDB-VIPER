@@ -11,7 +11,7 @@ public struct MovieResponse: Decodable, Hashable {
   public let page: Int?
   public let totalResults: Int?
   public let totalPages: Int?
-  public let movie: [Movie]
+  public let movie: [Movie]?
   
   internal enum CodingKeys: String, CodingKey {
     case page = "page"
@@ -40,7 +40,7 @@ public struct Movie: Decodable, Hashable {
   }
   
   public var voteAveragePercentText: String? {
-    return "\(Int((voteAverage ?? 0.0) * 10))%"
+    return String(format: " %.2f ", voteAverage ?? 0.0)
   }
   
   internal enum CodingKeys: String, CodingKey {
@@ -52,6 +52,16 @@ public struct Movie: Decodable, Hashable {
     case releaseDate = "release_date"
     case voteAverage = "vote_average"
     case voteCount = "vote_count"
+  }
+  
+  public static var `default`: Movie {
+    Movie(id: 315162, title: "Puss in Boots: The Last Wish",
+          backdropPath: "/r9PkFnRUIthgBp2JZZzD380MWZy.jpg",
+          posterPath: "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+          overview: "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives",
+          releaseDate: "2022-12-07",
+          voteAverage: 8.6, voteCount: 2077
+    )
   }
 }
 

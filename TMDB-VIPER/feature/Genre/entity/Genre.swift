@@ -8,7 +8,7 @@
 import Foundation
 
 struct genreResponse: Decodable {
-  let genre: [Genre]
+  let genre: [Genre]?
   
   internal enum CodingKeys: String, CodingKey {
     case genre = "genres"
@@ -22,5 +22,9 @@ struct Genre: Decodable {
   internal enum CodingKeys: String, CodingKey {
     case id = "id"
     case name = "name"
+  }
+  
+  public static var `default`: Genre {
+    Genre(id: 1, name: "Default")
   }
 }

@@ -7,5 +7,6 @@ target 'TMDB-VIPER' do
   pod 'Alamofire'
   pod 'netfox'
   pod 'Kingfisher'
+  pod 'lottie-ios'
 
 end

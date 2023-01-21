@@ -13,9 +13,9 @@ struct ApiCall {
   
   static public let imagePosterUrl = "https://image.tmdb.org/t/p/w500"
   static public let imagebackdropUrl = "https://image.tmdb.org/t/p/original"
-  
-  static public let youtubeUrl = "https://www.youtube.com/watch?v=/"
+  static public let youtubeUrl = "https://www.youtube.com/watch?v="
   static public let imageTumbnailYt = "http://img.youtube.com/vi/"
+  static public let imageAvatarUrl = "https://www.gravatar.com/avatar"
   
   
   static let URL_MOVIES_GENRE = URL_BASE + "genre/movie/list?api_key=\(API_KEY)"
