@@ -16,6 +16,7 @@
 		010AE4BB2978F7560018F7E8 /* UIActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4BA2978F7560018F7E8 /* UIActivityIndicator.swift */; };
 		010AE4C9297BFDAD0018F7E8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4C8297BFDAD0018F7E8 /* UIViewController.swift */; };
 		010AE4CC297BFE700018F7E8 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 010AE4CB297BFE700018F7E8 /* empty.json */; };
+		010AE4CE297C01CC0018F7E8 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4CD297C01CC0018F7E8 /* Double.swift */; };
 		01766FA12976952D00FED90A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA02976952D00FED90A /* AppDelegate.swift */; };
 		01766FA32976952D00FED90A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01766FA22976952D00FED90A /* SceneDelegate.swift */; };
 		01766FAA2976952E00FED90A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01766FA92976952E00FED90A /* Assets.xcassets */; };
@@ -24,7 +25,6 @@
 		01E619FD2977038A00792EB0 /* GenreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E619FB2977038A00792EB0 /* GenreVC.swift */; };
 		01E619FE2977038A00792EB0 /* GenreVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E619FC2977038A00792EB0 /* GenreVC.xib */; };
 		01E61A03297704C600792EB0 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A02297704C600792EB0 /* ApiCall.swift */; };
-		01E61A05297704CA00792EB0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A04297704CA00792EB0 /* String.swift */; };
 		01E61A07297704D600792EB0 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A06297704D600792EB0 /* UIImage.swift */; };
 		01E61A09297704E200792EB0 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A08297704E200792EB0 /* UITableViewCell.swift */; };
 		01E61A102977061400792EB0 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A0F2977061400792EB0 /* DetailInteractor.swift */; };
@@ -48,7 +48,6 @@
 		01E61A412977071800792EB0 /* GenrePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A402977071800792EB0 /* GenrePresenter.swift */; };
 		01E61A432977072900792EB0 /* GenreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A422977072900792EB0 /* GenreInteractor.swift */; };
 		01E61A4D297791BD00792EB0 /* ItemGenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */; };
-		01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */; };
 		01E61A5029779B2F00792EB0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4F29779B2F00792EB0 /* UIView.swift */; };
 		2529E27D7839D6B1DDB0E1F0 /* Pods_TMDB_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +62,7 @@
 		010AE4BA2978F7560018F7E8 /* UIActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicator.swift; sourceTree = "<group>"; };
 		010AE4C8297BFDAD0018F7E8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		010AE4CB297BFE700018F7E8 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
+		010AE4CD297C01CC0018F7E8 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		01766F9D2976952D00FED90A /* TMDB-VIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TMDB-VIPER.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		01766FA02976952D00FED90A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01766FA22976952D00FED90A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,7 +73,6 @@
 		01E619FB2977038A00792EB0 /* GenreVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreVC.swift; sourceTree = "<group>"; };
 		01E619FC2977038A00792EB0 /* GenreVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenreVC.xib; sourceTree = "<group>"; };
 		01E61A02297704C600792EB0 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
-		01E61A04297704CA00792EB0 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		01E61A06297704D600792EB0 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		01E61A08297704E200792EB0 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		01E61A0F2977061400792EB0 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
@@ -97,7 +96,6 @@
 		01E61A402977071800792EB0 /* GenrePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenrePresenter.swift; sourceTree = "<group>"; };
 		01E61A422977072900792EB0 /* GenreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreInteractor.swift; sourceTree = "<group>"; };
 		01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGenreCell.swift; sourceTree = "<group>"; };
-		01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemGenreCell.xib; sourceTree = "<group>"; };
 		01E61A4F29779B2F00792EB0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.release.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.release.xcconfig"; sourceTree = "<group>"; };
@@ -185,7 +183,6 @@
 		01E619F7297702F200792EB0 /* extenstion */ = {
 			isa = PBXGroup;
 			children = (
-				01E61A04297704CA00792EB0 /* String.swift */,
 				01E61A06297704D600792EB0 /* UIImage.swift */,
 				01E61A08297704E200792EB0 /* UITableViewCell.swift */,
 				01E61A4F29779B2F00792EB0 /* UIView.swift */,
@@ -194,6 +191,7 @@
 				010AE4B8297839020018F7E8 /* UIButton.swift */,
 				010AE4BA2978F7560018F7E8 /* UIActivityIndicator.swift */,
 				010AE4C8297BFDAD0018F7E8 /* UIViewController.swift */,
+				010AE4CD297C01CC0018F7E8 /* Double.swift */,
 			);
 			path = extenstion;
 			sourceTree = "<group>";
@@ -420,7 +418,6 @@
 			isa = PBXGroup;
 			children = (
 				01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */,
-				01E61A4C297791BD00792EB0 /* ItemGenreCell.xib */,
 			);
 			path = cell;
 			sourceTree = "<group>";
@@ -505,7 +502,6 @@
 				01766FAD2976952E00FED90A /* LaunchScreen.storyboard in Resources */,
 				010AE4AC2977D68D0018F7E8 /* ItemMovieCell.xib in Resources */,
 				01E61A1F2977065F00792EB0 /* DetailVC.xib in Resources */,
-				01E61A4E297791BD00792EB0 /* ItemGenreCell.xib in Resources */,
 				010AE4B7297816AE0018F7E8 /* ItemReviewCell.xib in Resources */,
 				01766FAA2976952E00FED90A /* Assets.xcassets in Resources */,
 				01E61A33297706CD00792EB0 /* MovieVC.xib in Resources */,
@@ -576,10 +572,10 @@
 				01E61A4D297791BD00792EB0 /* ItemGenreCell.swift in Sources */,
 				01E61A5029779B2F00792EB0 /* UIView.swift in Sources */,
 				01E61A1A2977063800792EB0 /* DetailRouter.swift in Sources */,
+				010AE4CE297C01CC0018F7E8 /* Double.swift in Sources */,
 				01E61A2F297706BD00792EB0 /* MovieInteractor.swift in Sources */,
 				01E61A3F2977071100792EB0 /* GenreProtocols.swift in Sources */,
 				01E61A09297704E200792EB0 /* UITableViewCell.swift in Sources */,
-				01E61A05297704CA00792EB0 /* String.swift in Sources */,
 				010AE4BB2978F7560018F7E8 /* UIActivityIndicator.swift in Sources */,
 				01E61A29297706A800792EB0 /* Movies.swift in Sources */,
 				01E61A2D297706B700792EB0 /* MoviePresenter.swift in Sources */,
@@ -744,7 +740,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -777,7 +773,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

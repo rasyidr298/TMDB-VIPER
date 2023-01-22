@@ -29,7 +29,7 @@ class ItemMovieCell: UITableViewCell {
   
   func setupView(movie: Movie) {
     lblTitle.text = movie.title
-    lblVote.text = movie.voteAveragePercentText
+    lblVote.text = movie.voteAverage?.rating()
     lblOverview.text = movie.overview
     imgPoster.setImageUrl(urlPath: movie.posterURL)
   }

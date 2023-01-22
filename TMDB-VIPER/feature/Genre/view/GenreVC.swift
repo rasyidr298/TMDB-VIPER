@@ -29,10 +29,7 @@ class GenreVC: UIViewController {
     
     self.collectionViewGenre.delegate = self
     self.collectionViewGenre.dataSource = self
-    self.collectionViewGenre.register(
-      UINib(nibName: ItemGenreCell.REUSE_IDENTIFIER, bundle: nil),
-      forCellWithReuseIdentifier: ItemGenreCell.REUSE_IDENTIFIER
-    )
+    self.collectionViewGenre.register(ItemGenreCell.self, forCellWithReuseIdentifier: ItemGenreCell.REUSE_IDENTIFIER)
   }
   
 }

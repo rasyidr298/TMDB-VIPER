@@ -8,5 +8,6 @@ target 'TMDB-VIPER' do
   pod 'netfox'
   pod 'Kingfisher'
   pod 'lottie-ios'
+  pod 'SnapKit'
 
 end
