@@ -7,8 +7,6 @@
 
 import Foundation
 import UIKit
-import Lottie
-
 
 extension UIView {
   @IBInspectable
