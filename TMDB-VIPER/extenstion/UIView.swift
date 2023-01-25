@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-  @IBInspectable
+  @objc @IBInspectable
   var radiusView: CGFloat {
     get {
       return self.layer.cornerRadius
@@ -18,3 +18,10 @@ extension UIView {
     }
   }
 }
+
+extension UIView {
+  static var reuseIdentifier: String {
+    return String(describing: Self.self)
+  }
+}
+

@@ -14,7 +14,7 @@ class ItemGenreCell: UICollectionViewCell {
     let lblTitle = UILabel()
     lblTitle.translatesAutoresizingMaskIntoConstraints = false
     lblTitle.textColor = UIColor.white
-    lblTitle.font = UIFont(name:"HelveticaNeue-Bold", size: 18.0)
+    lblTitle.font = UIFont.font(type: .sfSemibold, size: CGFloat.size_18)
     lblTitle.textAlignment = .center
     contentView.addSubview(lblTitle)
     return lblTitle
@@ -22,18 +22,18 @@ class ItemGenreCell: UICollectionViewCell {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-    addView()
+    setupConstraint()
   }
   
   required init?(coder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
-  func setupView(genre: Genre) {
+  func configureView(genre: Genre) {
     lblTitle.text = genre.name
   }
   
-  private func addView() {
+  private func setupConstraint() {
     contentView.backgroundColor = UIColor.random
     contentView.radiusView = 8
     

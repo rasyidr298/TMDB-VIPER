@@ -22,6 +22,7 @@ class MovieVC: UIViewController {
     configureView()
   }
   
+  // MARK: Configure View
   private func configureView() {
     title = genre?.name
     navigationController?.navigationBar.prefersLargeTitles = true
@@ -31,10 +32,11 @@ class MovieVC: UIViewController {
     
     self.tblViewMovies.delegate = self
     self.tblViewMovies.dataSource = self
-    self.tblViewMovies.register(UINib(nibName: ItemMovieCell.REUSE_IDENTIFIER, bundle: nil), forCellReuseIdentifier: ItemMovieCell.REUSE_IDENTIFIER)
+    self.tblViewMovies.register(cell: ItemMovieCell.self)
   }
 }
 
+// MARK: Fetching Data
 extension MovieVC: MoviePresenterToViewProtocol {
   func showMovie(movies: [Movie]) {
     self.movies.append(contentsOf: movies)
@@ -48,19 +50,16 @@ extension MovieVC: MoviePresenterToViewProtocol {
   }
 }
 
+// MARK: Configure TableView
 extension MovieVC: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return movies.count
   }
   
-  func tableView(
-    _ tableView: UITableView,
-    didSelectRowAt indexPath: IndexPath
-  ) {
-    guard let navigationController = navigationController else {
-      return
+  func tableView(didSelectRowAt indexPath: IndexPath) {
+    if let navigationController = navigationController {
+      presenter?.showDetailVC(controller: navigationController, movie: movies[indexPath.row])
     }
-    presenter?.showDetailVC(controller: navigationController, movie: movies[indexPath.row])
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -68,8 +67,8 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: ItemMovieCell.REUSE_IDENTIFIER, for: indexPath) as! ItemMovieCell
-    cell.setupView(movie: movies[indexPath.row])
+    let cell = tableView.dequeue(for: indexPath) as ItemMovieCell
+    cell.configureView(movie: movies[indexPath.row])
     
     if indexPath.row == movies.count - 1 {
       curentPage += 1
