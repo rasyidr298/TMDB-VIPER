@@ -20,8 +20,9 @@ class GenreVC: UIViewController {
     configureView()
   }
   
+  // MARK: Configure View
   private func configureView() {
-    title = "Movie Genre"
+    title = "Genre"
     navigationController?.navigationBar.prefersLargeTitles = true
     
     presenter?.startFetchGenre()
@@ -29,11 +30,12 @@ class GenreVC: UIViewController {
     
     self.collectionViewGenre.delegate = self
     self.collectionViewGenre.dataSource = self
-    self.collectionViewGenre.register(ItemGenreCell.self, forCellWithReuseIdentifier: ItemGenreCell.REUSE_IDENTIFIER)
+    self.collectionViewGenre.register(cell: ItemGenreCell.self)
   }
   
 }
 
+// MARK: Fetching Data
 extension GenreVC: GenrePresenterToViewProtocol {
   func showGenre(genres: [Genre]) {
     self.genres.append(contentsOf: genres)
@@ -47,35 +49,27 @@ extension GenreVC: GenrePresenterToViewProtocol {
   }
 }
 
+// MARK: Configure CollectionView
 extension GenreVC: UICollectionViewDataSource {
-  func collectionView(
-    _ collectionView: UICollectionView,
-    numberOfItemsInSection section: Int
-  ) -> Int {
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return genres.count
   }
   
-  func collectionView(
-    _ collectionView: UICollectionView,
-    cellForItemAt indexPath: IndexPath
-  ) -> UICollectionViewCell {
-    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ItemGenreCell.REUSE_IDENTIFIER, for: indexPath) as! ItemGenreCell
-    cell.setupView(genre: genres[indexPath.row])
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeue(for: indexPath) as ItemGenreCell
+    cell.configureView(genre: genres[indexPath.row])
     
     return cell
   }
   
-  func collectionView(
-    _ collectionView: UICollectionView,
-    didSelectItemAt indexPath: IndexPath
-  ) {
-    guard let navigationController = navigationController else {
-      return
+  func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    if let navigationController = navigationController {
+      presenter?.showMovieVC(controller: navigationController, genre: genres[indexPath.row])
     }
-    presenter?.showMovieVC(controller: navigationController, genre: genres[indexPath.row])
   }
 }
 
+// MARK: Configure CollectionViewLayout
 extension GenreVC: UICollectionViewDelegateFlowLayout {
   func collectionView(
     _ collectionView: UICollectionView,

@@ -31,9 +31,12 @@ class DetailVC: UIViewController {
   }
   
   @IBAction func didTapTrailler(_ sender: Any) {
-    UIApplication.shared.open((movieVideo?.youtubeURL)!)
+    if let url = movieVideo?.youtubeURL {
+      UIApplication.shared.open(url)
+    }
   }
   
+  // MARK: Configure View
   private func configureView() {
     self.lblOverview.text = movie?.overview
     self.lblVote.text = movie?.voteAveragePercentText
@@ -48,10 +51,11 @@ class DetailVC: UIViewController {
     self.tblViewReview.rowHeight = UITableView.automaticDimension
     self.tblViewReview.delegate = self
     self.tblViewReview.dataSource = self
-    self.tblViewReview.register(UINib(nibName: ItemReviewCell.REUSE_IDENTIFIER, bundle: nil), forCellReuseIdentifier: ItemReviewCell.REUSE_IDENTIFIER)
+    self.tblViewReview.register(cell: ItemReviewCell.self)
   }
 }
 
+// MARK: Fetching Data
 extension DetailVC: DetailPresenterToViewProtocol {
   func showReviews(reviews: [MovieReview]) {
     self.reviews.append(contentsOf: reviews)
@@ -81,14 +85,15 @@ extension DetailVC: DetailPresenterToViewProtocol {
   }
 }
 
+// MARK: Configure TableView
 extension DetailVC: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return reviews.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: ItemReviewCell.REUSE_IDENTIFIER, for: indexPath) as! ItemReviewCell
-    cell.setupView(review: reviews[indexPath.row])
+    let cell = tableView.dequeue(for: indexPath) as ItemReviewCell
+    cell.configureView(review: reviews[indexPath.row])
     
     if indexPath.row == reviews.count - 1 {
       curentPage += 1
