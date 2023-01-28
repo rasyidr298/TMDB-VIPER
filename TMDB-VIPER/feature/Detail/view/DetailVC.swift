@@ -80,7 +80,7 @@ extension DetailVC: DetailPresenterToViewProtocol {
   }
   
   func showError(error: Error) {
-    print("error -> \(error)")
+    self.showGeneralError(message: error.localizedDescription)
     actIndicator.stop()
   }
 }

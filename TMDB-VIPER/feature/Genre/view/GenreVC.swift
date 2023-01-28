@@ -44,7 +44,7 @@ extension GenreVC: GenrePresenterToViewProtocol {
   }
   
   func showError(error: Error) {
-    print("show error -> \(error)")
+    self.showGeneralError(message: error.localizedDescription)
     actIndikator.stop()
   }
 }

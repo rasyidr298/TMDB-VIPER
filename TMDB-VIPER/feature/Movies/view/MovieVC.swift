@@ -45,7 +45,7 @@ extension MovieVC: MoviePresenterToViewProtocol {
   }
   
   func showError(error: Error) {
-    print("error -> \(error)")
+    self.showGeneralError(message: error.localizedDescription)
     actIndicator.stop()
   }
 }
