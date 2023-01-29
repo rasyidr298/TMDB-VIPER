@@ -44,7 +44,7 @@ class DetailVC: UIViewController {
     self.imgBackdrop.setImageUrl(urlPath: movie?.backdropURL ?? "")
     self.imgPoster.setImageUrl(urlPath: movie?.posterURL ?? "")
     
-    presenter?.startFetchReviews(idMovie: movie?.id ?? 0, page: 1)
+    presenter?.startFetchReviews(idMovie: movie?.id ?? 0, page: curentPage)
     presenter?.startFetchVideo(idMovie: movie?.id ?? 0)
     actIndicator.start()
     
@@ -95,9 +95,9 @@ extension DetailVC: UITableViewDataSource, UITableViewDelegate {
     let cell = tableView.dequeue(for: indexPath) as ItemReviewCell
     cell.configureView(review: reviews[indexPath.row])
     
-    if indexPath.row == reviews.count - 1 {
+    if indexPath.row == reviews.count && indexPath.row < reviews.count {
       curentPage += 1
-      presenter?.startFetchReviews(idMovie: movie?.id ?? 0, page: 1)
+      presenter?.startFetchReviews(idMovie: movie?.id ?? 0, page: curentPage)
     }
     
     return cell
