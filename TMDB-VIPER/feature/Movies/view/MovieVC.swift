@@ -56,7 +56,7 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
     return movies.count
   }
   
-  func tableView(didSelectRowAt indexPath: IndexPath) {
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     if let navigationController = navigationController {
       presenter?.showDetailVC(controller: navigationController, movie: movies[indexPath.row])
     }
@@ -70,7 +70,7 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
     let cell = tableView.dequeue(for: indexPath) as ItemMovieCell
     cell.configureView(movie: movies[indexPath.row])
     
-    if indexPath.row == movies.count - 1 {
+    if indexPath.row == movies.count && indexPath.row < movies.count {
       curentPage += 1
       presenter?.startFetchMovie(idGenre: genre?.id ?? 0, page: curentPage)
     }
