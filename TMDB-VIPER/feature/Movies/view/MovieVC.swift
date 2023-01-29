@@ -70,7 +70,7 @@ extension MovieVC: UITableViewDataSource, UITableViewDelegate {
     let cell = tableView.dequeue(for: indexPath) as ItemMovieCell
     cell.configureView(movie: movies[indexPath.row])
     
-    if indexPath.row == movies.count && indexPath.row < movies.count {
+    if indexPath.row == movies.count - 1 {
       curentPage += 1
       presenter?.startFetchMovie(idGenre: genre?.id ?? 0, page: curentPage)
     }

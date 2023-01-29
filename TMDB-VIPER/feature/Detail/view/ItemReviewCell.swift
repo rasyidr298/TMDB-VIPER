@@ -42,12 +42,6 @@ class ItemReviewCell: UITableViewCell {
     fatalError("init(coder:) has not been implemented")
   }
   
-  override func layoutSubviews() {
-    super.layoutSubviews()
-    
-    contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0))
-  }
-  
   func configureView(review: MovieReview) {
     lblAuthor.text = review.author
     lblContent.text = review.content
