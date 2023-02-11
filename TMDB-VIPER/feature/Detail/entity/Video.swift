@@ -15,7 +15,8 @@ public struct MovieVideoResponse: Decodable {
   }
 }
 
-public struct MovieVideo: Decodable {
+//data response
+public struct MovieVideo {
   public let id: String?
   public let key: String?
   public let name: String?
@@ -30,15 +31,6 @@ public struct MovieVideo: Decodable {
     return URL(string: ApiCall.youtubeUrl + (key ?? ""))
   }
   
-  internal enum CodingKeys: String, CodingKey {
-    case id = "id"
-    case key = "key"
-    case name = "name"
-    case site = "site"
-    case size = "size"
-    case type = "type"
-  }
-  
   public static var `default`: MovieVideo {
     MovieVideo(
       id: "63a759abe4b57600a05166d2",
@@ -48,5 +40,29 @@ public struct MovieVideo: Decodable {
       size: 1080,
       type: "Featurette"
     )
+  }
+}
+
+//decodable
+extension MovieVideo: Decodable {
+  internal enum CodingKeys: String, CodingKey {
+    case id = "id"
+    case key = "key"
+    case name = "name"
+    case site = "site"
+    case size = "size"
+    case type = "type"
+  }
+}
+
+//equatable
+extension MovieVideo: Equatable {
+  public static func == (lhs: MovieVideo, rhs: MovieVideo) -> Bool {
+    return lhs.id == rhs.id &&
+    lhs.key == rhs.key &&
+    lhs.name == rhs.name &&
+    lhs.site == rhs.site &&
+    lhs.size == rhs.size &&
+    lhs.type == rhs.type
   }
 }

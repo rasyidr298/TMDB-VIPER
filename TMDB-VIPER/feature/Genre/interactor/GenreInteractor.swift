@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class GenreInteractor: GenrePresenterToInteractorProtocol {
-  var presenter: GenreInteractorToPresenterProtocol?
+  weak var presenter: GenreInteractorToPresenterProtocol?
   
   func fetchGenres() {
     if let requestURL = URL(string: ApiCall.URL_MOVIES_GENRE) {

@@ -1,0 +1,6 @@
+framework module Pods_TMDB_VIPER_TMDB_VIPERTests {
+  umbrella header "Pods-TMDB-VIPER-TMDB-VIPERTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,7 +1,7 @@
 PODS:
-  - Alamofire (5.6.2)
-  - Kingfisher (7.4.1)
-  - lottie-ios (3.5.0)
+  - Alamofire (5.6.4)
+  - Kingfisher (7.6.0)
+  - lottie-ios (4.1.2)
   - netfox (1.21.0)
   - SnapKit (5.6.0)
 
@@ -21,12 +21,12 @@ SPEC REPOS:
     - SnapKit
 
 SPEC CHECKSUMS:
-  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
-  Kingfisher: cd762a593a61b2fbecf7645c00f9a801a3ebfc9c
-  lottie-ios: c55158d67d0629a260625cc2ded2052b829e3c3e
+  Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
+  Kingfisher: b9bb0cd6907813593db268be80ddb931423c33b2
+  lottie-ios: b3846a9fa8ca1a1a3bebfa256ebe8b6fd4aaaaad
   netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: ac3ea58e301b5a280cc01e49481e5820dbc1b6de
+PODFILE CHECKSUM: 2f5d67cff04843cc5ecb7ab531eb65291a1954eb
 
 COCOAPODS: 1.11.3

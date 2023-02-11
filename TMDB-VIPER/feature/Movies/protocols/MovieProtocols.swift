@@ -13,7 +13,7 @@ protocol MoviePresenterToInteractorProtocol {
   func fetchMovies(idGenre: Int, page: Int)
 }
 
-protocol MovieInteractorToPresenterProtocol {
+protocol MovieInteractorToPresenterProtocol: AnyObject {
   func movieFetchedSucces(movies: [Movie])
   func movieFetchedFailed(error: Error)
 }

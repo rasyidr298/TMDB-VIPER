@@ -117,7 +117,7 @@
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="filled" image="play.fill" catalog="system" title="Play" cornerStyle="medium">
                         <fontDescription key="titleFontDescription" style="UICTFontTextStyleCaption1"/>
-                        <color key="baseBackgroundColor" red="1" green="0.18946447380000001" blue="0.30990122460000002" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                     </buttonConfiguration>
                     <connections>
                         <action selector="didTapTrailler:" destination="-1" eventType="touchUpInside" id="qfq-WO-PMB"/>
@@ -170,6 +170,9 @@
         <image name="play.fill" catalog="system" width="117" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

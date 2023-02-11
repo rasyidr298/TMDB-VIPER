@@ -9,5 +9,11 @@ target 'TMDB-VIPER' do
   pod 'Kingfisher'
   pod 'lottie-ios'
   pod 'SnapKit'
+  
+  target 'TMDB-VIPERTests' do
+    use_frameworks!
+    
+    pod 'Alamofire'
+  end
 
 end

@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class DetailInteractor: DetailPresenterToInteractorProtocol {
-  var presenter: DetailInteractorToPresenterProtocol?
+  weak var presenter: DetailInteractorToPresenterProtocol?
   
   func fetchReviews(idMovie: Int, page: Int) {
     if let requestURL = URL(string: ApiCall.URL_MOVIES_REVIEW(idMovie, page)) {
