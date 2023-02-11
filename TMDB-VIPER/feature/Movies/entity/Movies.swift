@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct MovieResponse: Decodable, Hashable {
+public struct MovieResponse: Decodable {
   public let page: Int?
   public let totalResults: Int?
   public let totalPages: Int?
@@ -21,7 +21,8 @@ public struct MovieResponse: Decodable, Hashable {
   }
 }
 
-public struct Movie: Decodable, Hashable {
+//data response
+public struct Movie {
   public let id: Int?
   public let title: String?
   public let backdropPath: String?
@@ -43,6 +44,19 @@ public struct Movie: Decodable, Hashable {
     return String(format: " %.2f ", voteAverage ?? 0.0)
   }
   
+  public static var `default`: Movie {
+    Movie(id: 315162, title: "Puss in Boots: The Last Wish",
+          backdropPath: "/r9PkFnRUIthgBp2JZZzD380MWZy.jpg",
+          posterPath: "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
+          overview: "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives",
+          releaseDate: "2022-12-07",
+          voteAverage: 8.6, voteCount: 2077
+    )
+  }
+}
+
+//Decodable
+extension Movie: Decodable {
   internal enum CodingKeys: String, CodingKey {
     case id = "id"
     case title = "title"
@@ -53,15 +67,19 @@ public struct Movie: Decodable, Hashable {
     case voteAverage = "vote_average"
     case voteCount = "vote_count"
   }
-  
-  public static var `default`: Movie {
-    Movie(id: 315162, title: "Puss in Boots: The Last Wish",
-          backdropPath: "/r9PkFnRUIthgBp2JZZzD380MWZy.jpg",
-          posterPath: "/kuf6dutpsT0vSVehic3EZIqkOBt.jpg",
-          overview: "Puss in Boots discovers that his passion for adventure has taken its toll: He has burned through eight of his nine lives, leaving him with only one life left. Puss sets out on an epic journey to find the mythical Last Wish and restore his nine lives",
-          releaseDate: "2022-12-07",
-          voteAverage: 8.6, voteCount: 2077
-    )
+}
+
+//Equatable
+extension Movie: Equatable {
+  public static func ==(lhs: Movie, rhs: Movie) -> Bool {
+    return lhs.id == rhs.id &&
+    lhs.title == rhs.title &&
+    lhs.backdropPath == rhs.backdropPath &&
+    lhs.posterPath == rhs.posterPath &&
+    lhs.overview == rhs.overview &&
+    lhs.releaseDate == rhs.releaseDate &&
+    lhs.voteAverage == rhs.voteAverage &&
+    lhs.voteCount == rhs.voteCount
   }
 }
 

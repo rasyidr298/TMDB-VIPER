@@ -13,7 +13,7 @@ protocol GenrePresenterToInteractorProtocol {
   func fetchGenres()
 }
 
-protocol GenreInteractorToPresenterProtocol {
+protocol GenreInteractorToPresenterProtocol: AnyObject {
   func genreFetchedSucces(genres: [Genre])
   func genreFetchedFailed(error: Error)
 }

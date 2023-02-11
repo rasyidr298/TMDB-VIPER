@@ -14,7 +14,7 @@ protocol DetailPresenterToInteractorProtocol {
   func fetchVideo(idMovie: Int)
 }
 
-protocol DetailInteractorToPresenterProtocol {
+protocol DetailInteractorToPresenterProtocol: AnyObject {
   func reviewFetchedSucces(reviews: [MovieReview])
   func videoFetchedSucces(videos: [MovieVideo])
   func reviewFetchedFailed(error: Error)

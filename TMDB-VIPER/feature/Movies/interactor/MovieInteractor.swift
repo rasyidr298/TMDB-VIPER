@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 class MovieInteractor: MoviePresenterToInteractorProtocol {
-  var presenter: MovieInteractorToPresenterProtocol?
+  weak var presenter: MovieInteractorToPresenterProtocol?
   
   func fetchMovies(idGenre: Int, page: Int) {
     if let requestURL = URL(string: ApiCall.URL_MOVIES_DISCOVER(idGenre, page)) {

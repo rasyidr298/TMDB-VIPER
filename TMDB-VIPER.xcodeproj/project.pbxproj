@@ -15,6 +15,13 @@
 		010AE4C9297BFDAD0018F7E8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4C8297BFDAD0018F7E8 /* UIViewController.swift */; };
 		010AE4CC297BFE700018F7E8 /* empty.json in Resources */ = {isa = PBXBuildFile; fileRef = 010AE4CB297BFE700018F7E8 /* empty.json */; };
 		010AE4CE297C01CC0018F7E8 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010AE4CD297C01CC0018F7E8 /* Double.swift */; };
+		01333A172996CC3900B902D4 /* GenreEntitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A162996CC3900B902D4 /* GenreEntitiesTest.swift */; };
+		01333A192996CDF400B902D4 /* MovieEntitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A182996CDF400B902D4 /* MovieEntitiesTest.swift */; };
+		01333A1B2996CFA700B902D4 /* VideoEntitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A1A2996CFA700B902D4 /* VideoEntitiesTest.swift */; };
+		01333A1D2996CFB300B902D4 /* ReviewEntitiesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A1C2996CFB300B902D4 /* ReviewEntitiesTest.swift */; };
+		01333A1F2996D43000B902D4 /* GenreFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A1E2996D43000B902D4 /* GenreFeatureTest.swift */; };
+		01333A232997E9F200B902D4 /* MovieFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A222997E9F200B902D4 /* MovieFeatureTest.swift */; };
+		01333A2729981BAB00B902D4 /* DetailFeatureTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01333A2629981BAB00B902D4 /* DetailFeatureTest.swift */; };
 		015519E0297EFB37006133B5 /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 015519DF297EFB37006133B5 /* UIFont.swift */; };
 		015519E7297EFB75006133B5 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 015519E2297EFB74006133B5 /* SF-Compact-Text-Regular.otf */; };
 		015519E8297EFB75006133B5 /* SF-Compact-Text-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 015519E3297EFB75006133B5 /* SF-Compact-Text-Medium.otf */; };
@@ -56,7 +63,18 @@
 		01E61A4D297791BD00792EB0 /* ItemGenreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */; };
 		01E61A5029779B2F00792EB0 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01E61A4F29779B2F00792EB0 /* UIView.swift */; };
 		2529E27D7839D6B1DDB0E1F0 /* Pods_TMDB_VIPER.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */; };
+		A29C8766DB98CFC8901AD639 /* Pods_TMDB_VIPER_TMDB_VIPERTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBA4CF0D581F8CFF9A3BBF73 /* Pods_TMDB_VIPER_TMDB_VIPERTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		01333A112996CC0400B902D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 01766F952976952D00FED90A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01766F9C2976952D00FED90A;
+			remoteInfo = "TMDB-VIPER";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		010AE4A22977CA810018F7E8 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
@@ -67,6 +85,14 @@
 		010AE4C8297BFDAD0018F7E8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		010AE4CB297BFE700018F7E8 /* empty.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty.json; sourceTree = "<group>"; };
 		010AE4CD297C01CC0018F7E8 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		01333A0D2996CC0400B902D4 /* TMDB-VIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TMDB-VIPERTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01333A162996CC3900B902D4 /* GenreEntitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreEntitiesTest.swift; sourceTree = "<group>"; };
+		01333A182996CDF400B902D4 /* MovieEntitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntitiesTest.swift; sourceTree = "<group>"; };
+		01333A1A2996CFA700B902D4 /* VideoEntitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoEntitiesTest.swift; sourceTree = "<group>"; };
+		01333A1C2996CFB300B902D4 /* ReviewEntitiesTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewEntitiesTest.swift; sourceTree = "<group>"; };
+		01333A1E2996D43000B902D4 /* GenreFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreFeatureTest.swift; sourceTree = "<group>"; };
+		01333A222997E9F200B902D4 /* MovieFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFeatureTest.swift; sourceTree = "<group>"; };
+		01333A2629981BAB00B902D4 /* DetailFeatureTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFeatureTest.swift; sourceTree = "<group>"; };
 		015519DF297EFB37006133B5 /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
 		015519E2297EFB74006133B5 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		015519E3297EFB75006133B5 /* SF-Compact-Text-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Medium.otf"; sourceTree = "<group>"; };
@@ -109,12 +135,23 @@
 		01E61A422977072900792EB0 /* GenreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreInteractor.swift; sourceTree = "<group>"; };
 		01E61A4B297791BD00792EB0 /* ItemGenreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemGenreCell.swift; sourceTree = "<group>"; };
 		01E61A4F29779B2F00792EB0 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		0330851A935ACD89461EC82A /* Pods-TMDB-VIPER-TMDB-VIPERTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER-TMDB-VIPERTests.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER-TMDB-VIPERTests/Pods-TMDB-VIPER-TMDB-VIPERTests.debug.xcconfig"; sourceTree = "<group>"; };
 		96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.debug.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.debug.xcconfig"; sourceTree = "<group>"; };
 		A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER.release.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER.release.xcconfig"; sourceTree = "<group>"; };
 		C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_VIPER.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBA4CF0D581F8CFF9A3BBF73 /* Pods_TMDB_VIPER_TMDB_VIPERTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TMDB_VIPER_TMDB_VIPERTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9DBBB83ABD35EC24166E1E5 /* Pods-TMDB-VIPER-TMDB-VIPERTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TMDB-VIPER-TMDB-VIPERTests.release.xcconfig"; path = "Target Support Files/Pods-TMDB-VIPER-TMDB-VIPERTests/Pods-TMDB-VIPER-TMDB-VIPERTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01333A0A2996CC0400B902D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A29C8766DB98CFC8901AD639 /* Pods_TMDB_VIPER_TMDB_VIPERTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01766F9A2976952D00FED90A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -144,6 +181,44 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		01333A032996C88A00B902D4 /* GenreTest */ = {
+			isa = PBXGroup;
+			children = (
+				01333A162996CC3900B902D4 /* GenreEntitiesTest.swift */,
+				01333A1E2996D43000B902D4 /* GenreFeatureTest.swift */,
+			);
+			path = GenreTest;
+			sourceTree = "<group>";
+		};
+		01333A052996CABC00B902D4 /* MoviesTest */ = {
+			isa = PBXGroup;
+			children = (
+				01333A182996CDF400B902D4 /* MovieEntitiesTest.swift */,
+				01333A222997E9F200B902D4 /* MovieFeatureTest.swift */,
+			);
+			path = MoviesTest;
+			sourceTree = "<group>";
+		};
+		01333A062996CAC400B902D4 /* DetailTest */ = {
+			isa = PBXGroup;
+			children = (
+				01333A1A2996CFA700B902D4 /* VideoEntitiesTest.swift */,
+				01333A1C2996CFB300B902D4 /* ReviewEntitiesTest.swift */,
+				01333A2629981BAB00B902D4 /* DetailFeatureTest.swift */,
+			);
+			path = DetailTest;
+			sourceTree = "<group>";
+		};
+		01333A0E2996CC0400B902D4 /* TMDB-VIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				01333A032996C88A00B902D4 /* GenreTest */,
+				01333A052996CABC00B902D4 /* MoviesTest */,
+				01333A062996CAC400B902D4 /* DetailTest */,
+			);
+			path = "TMDB-VIPERTests";
+			sourceTree = "<group>";
+		};
 		015519E1297EFB50006133B5 /* font */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				01766F9F2976952D00FED90A /* TMDB-VIPER */,
+				01333A0E2996CC0400B902D4 /* TMDB-VIPERTests */,
 				01766F9E2976952D00FED90A /* Products */,
 				E0882E40FAB3872B5182C069 /* Pods */,
 				D59622E1FA9667BDBE56AAD0 /* Frameworks */,
@@ -170,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				01766F9D2976952D00FED90A /* TMDB-VIPER.app */,
+				01333A0D2996CC0400B902D4 /* TMDB-VIPERTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -428,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				C5D9E311CFF9D9C84FF56B3B /* Pods_TMDB_VIPER.framework */,
+				EBA4CF0D581F8CFF9A3BBF73 /* Pods_TMDB_VIPER_TMDB_VIPERTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -437,6 +515,8 @@
 			children = (
 				96E5FF410B9E8AF9FAE37440 /* Pods-TMDB-VIPER.debug.xcconfig */,
 				A9FCEA145E8AF788D5B5A489 /* Pods-TMDB-VIPER.release.xcconfig */,
+				0330851A935ACD89461EC82A /* Pods-TMDB-VIPER-TMDB-VIPERTests.debug.xcconfig */,
+				F9DBBB83ABD35EC24166E1E5 /* Pods-TMDB-VIPER-TMDB-VIPERTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -444,6 +524,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		01333A0C2996CC0400B902D4 /* TMDB-VIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01333A132996CC0500B902D4 /* Build configuration list for PBXNativeTarget "TMDB-VIPERTests" */;
+			buildPhases = (
+				7CD8A34721488B5CB82C8D7F /* [CP] Check Pods Manifest.lock */,
+				01333A092996CC0400B902D4 /* Sources */,
+				01333A0A2996CC0400B902D4 /* Frameworks */,
+				01333A0B2996CC0400B902D4 /* Resources */,
+				34BFC60B318769A1FA4CC7BF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01333A122996CC0400B902D4 /* PBXTargetDependency */,
+			);
+			name = "TMDB-VIPERTests";
+			productName = "TMDB-VIPERTests";
+			productReference = 01333A0D2996CC0400B902D4 /* TMDB-VIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		01766F9C2976952D00FED90A /* TMDB-VIPER */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 01766FB12976952E00FED90A /* Build configuration list for PBXNativeTarget "TMDB-VIPER" */;
@@ -473,6 +573,10 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					01333A0C2996CC0400B902D4 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 01766F9C2976952D00FED90A;
+					};
 					01766F9C2976952D00FED90A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -492,11 +596,19 @@
 			projectRoot = "";
 			targets = (
 				01766F9C2976952D00FED90A /* TMDB-VIPER */,
+				01333A0C2996CC0400B902D4 /* TMDB-VIPERTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01333A0B2996CC0400B902D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01766F9B2976952D00FED90A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +630,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		34BFC60B318769A1FA4CC7BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDB-VIPER-TMDB-VIPERTests/Pods-TMDB-VIPER-TMDB-VIPERTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TMDB-VIPER-TMDB-VIPERTests/Pods-TMDB-VIPER-TMDB-VIPERTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDB-VIPER-TMDB-VIPERTests/Pods-TMDB-VIPER-TMDB-VIPERTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		43BC96584AB21813D2381903 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,6 +662,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TMDB-VIPER/Pods-TMDB-VIPER-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD8A34721488B5CB82C8D7F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TMDB-VIPER-TMDB-VIPERTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD5D4E978F052A880CCF8F9C /* [CP] Check Pods Manifest.lock */ = {
@@ -560,6 +711,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01333A092996CC0400B902D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01333A2729981BAB00B902D4 /* DetailFeatureTest.swift in Sources */,
+				01333A1B2996CFA700B902D4 /* VideoEntitiesTest.swift in Sources */,
+				01333A172996CC3900B902D4 /* GenreEntitiesTest.swift in Sources */,
+				01333A1D2996CFB300B902D4 /* ReviewEntitiesTest.swift in Sources */,
+				01333A232997E9F200B902D4 /* MovieFeatureTest.swift in Sources */,
+				01333A192996CDF400B902D4 /* MovieEntitiesTest.swift in Sources */,
+				01333A1F2996D43000B902D4 /* GenreFeatureTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		01766F992976952D00FED90A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,6 +771,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		01333A122996CC0400B902D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01766F9C2976952D00FED90A /* TMDB-VIPER */;
+			targetProxy = 01333A112996CC0400B902D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		01766FAB2976952E00FED90A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -618,6 +791,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		01333A142996CC0500B902D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0330851A935ACD89461EC82A /* Pods-TMDB-VIPER-TMDB-VIPERTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DA8L68M7F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rrdev.TMDB-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB-VIPER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDB-VIPER";
+			};
+			name = Debug;
+		};
+		01333A152996CC0500B902D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DBBB83ABD35EC24166E1E5 /* Pods-TMDB-VIPER-TMDB-VIPERTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DA8L68M7F2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "rrdev.TMDB-VIPERTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TMDB-VIPER.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TMDB-VIPER";
+			};
+			name = Release;
+		};
 		01766FAF2976952E00FED90A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -801,6 +1012,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01333A132996CC0500B902D4 /* Build configuration list for PBXNativeTarget "TMDB-VIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01333A142996CC0500B902D4 /* Debug */,
+				01333A152996CC0500B902D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		01766F982976952D00FED90A /* Build configuration list for PBXProject "TMDB-VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
